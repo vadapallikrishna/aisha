@@ -1,20 +1,32 @@
 #include <cstdio>
+#include <iostream>
 #include <fstream>
 
 using namespace std;
 
-class Token {
+class TokenBuilder {
+     private:
+	
+
      public:
 	string token;
 	int take(char c) {
-		token += c;
-		return 0;
+	    
+	    return 0;
 	}
+
+
+
+
+};
+
+
+class Token {
 
 };
 
 class ModuleToken: Token {
-     
+
 };
 
 class ImportToken: Token {
@@ -24,10 +36,12 @@ class ImportToken: Token {
 class Parser {
      private:
 	ifstream file;
+	TokenBuilder builder;
+
 	char c;
 	int parse() {
 	    while(file >> c) {
-     		printf("%c",c);   	
+     		builder.take(c);
 	    }
 	    return 0;
 	}
