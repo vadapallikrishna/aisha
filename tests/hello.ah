@@ -1,0 +1,27 @@
+module hello.foundation
+
+import sys
+
+class Hello < Super
+
+end
+
+int hello(h: int)
+    const a = 2
+    a: int  = 2
+    a = a + 2
+    a = {1, 2, 3, 4}
+    b = {}
+
+    if hello
+        print "hello, world"
+    else if not hello
+        print "hello, world"
+    end
+
+    while a in range(0,2)
+    	print a
+    end
+    
+end
+
