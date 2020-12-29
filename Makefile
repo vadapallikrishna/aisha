@@ -1,3 +1,3 @@
 
 default:
-	g++ main.cpp parser.cpp -o aisha
+	g++ -o aisha $(shell find src/ -type f )

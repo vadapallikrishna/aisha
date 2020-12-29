@@ -1,8 +1,13 @@
 #include <cstdio>
-#include "parser.cpp"
+#include "compiler/parser.cpp"
 
 int main(int argc, char **argv) {
-	printf("%s", argv[1]);
-
+        	
+        if (argv[1] == NULL) {
+	    new Parser("stdin");
+	} else {
+	    new Parser(argv[1]);
+	}
+	
 
 }

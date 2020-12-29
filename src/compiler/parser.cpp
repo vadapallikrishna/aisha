@@ -36,5 +36,6 @@ class Parser {
      public:
 	Parser(string fname) {
 	    file.open(fname);
+	    parse();
 	}
 };
